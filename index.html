@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <br>
+   <label for="name">Nome: </label>
+   <input type="text" id="name" name="name">
+   <br>
+   <br>
+   <label for="email">Email: </label>
+   <input type="email" id="email" name="email">
+   <br>
+   <br>
+   <br>
+   <br>
+   <!-- Ao clicar no botão de Cadastrar chama a função Inserir Dados -->
+   <button onclick="InserirDados()">Cadastrar</button>
+   <br/>
+   <br/>
+   <br/>
+    <table>
+        <thead>
+            <tr>
+                <td>ID:</td>
+                <td>Nome:</td>
+                <td>Email:</td>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script src="./scripts/Globais.js"></script>
+   <script src="./scripts/InserirDados.js"></script>
+   <script src="./scripts/MostrarDados.js"></script>
+   <script src="./scripts/EditarDados.js"></script>
+   <script src="./scripts/DeletarDados.js"></script>
+</body>
+</html>

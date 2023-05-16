@@ -6,15 +6,17 @@ function InserirDados(){
     }
 
     //Cria as variveis para guardar a informação inseridas
-    var valorNome = document.getElementById("name").value
-    var valorEmail = document.getElementById("email").value
+    const nome = document.querySelector("#name");
+    const email = document.querySelector("#email");
     
     //cria um objeto com as variaveis
-    const data = {nome: valorNome, email: valorEmail}
+    const data = {nome: nome.value, email: email.value};
+    nome.value = '';
+    email.value = '';
     
     //inseri na lista o objeto criado
-    listaDados.push(data)
+    listaDados.push(data);
     
     //chama a função gerarTabela do script MostrarDados para mostrar na pagina
-    gerarTabela(listaDados)
+    gerarTabela(listaDados);
 }
